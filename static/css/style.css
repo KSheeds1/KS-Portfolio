@@ -1,10 +1,39 @@
-/*--------------------Footer*/
+/*--------------------General*/
+@import url('https://fonts.googleapis.com/css2?family=Prata&family=Raleway:wght@100&display=swap');
+
 body {
+    background-color: #F7F8F2;
+    font-family: "Raleway", sans-serif;
+    color: #141414;
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-  }
+}
 
-  main {
+.brand-logo {
+    font-family: "Prata", sans-serif;
+}
+
+/*--------------------Sections*/
+section {
+    display: block;
+}
+
+#landing {
+    background-color: #cfd8dc;
+}
+#info {
+    background-color: #97A1D8;
+}
+#portfolio
+#email
+
+/*--------------------Footer*/
+main {
     flex: 1 0 auto;
-  }
+}
+
+footer ul li {
+    display: inline;
+    padding: 2px;
+}
