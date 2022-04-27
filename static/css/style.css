@@ -10,29 +10,122 @@ body {
     flex-direction: column;
 }
 
-.brand-logo {
-    font-family: "Prata", sans-serif;
-}
-
-/*--------------------Sections*/
-section {
-    display: block;
-}
-
-#landing {
-    background-color: #cfd8dc;
-}
-#info {
-    background-color: #97A1D8;
-}
-#portfolio
-#email
-
-/*--------------------Footer*/
 main {
     flex: 1 0 auto;
 }
 
+.brand-logo, h1, h2 {
+    font-family: "Prata", sans-serif;
+}
+
+p {
+    font-family: "Raleway", sans-serif;
+    color: #141414;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/*---------------------- Navbar: */
+.nav-dark {
+    background-color: #030301;
+    font-family: "Prata", sans-serif;
+}
+
+nav .brand-logo .left {
+    font-family: "Prata", sans-serif;
+    font-size: 8vw;
+}
+
+nav ul li a:hover {
+    background-color: #fffff3;
+    color: #030301;
+}
+
+/*--------------------Buttons*/
+.contact-me {
+    color: #405005;
+    background-color: #F7F8F2;
+}
+
+.contact-me:hover {
+    color: #F7F8F2;
+    background-color: #AED914;
+}
+
+
+/*--------------------Sections*/
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/site-imgs/pbg.webp");
+    height: 70vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-text {
+    color: #F7F8F2;
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: name 10s infinite;
+    animation-timing-function: ease;
+}
+
+/* @keyframes name {
+    from {left: 10px;}
+    to {right: 300px;}
+} */
+
+#info {
+    background-color: #F7F8F2;
+}
+
+.me {
+    margin-top: 20%;
+    object-fit: cover;
+    height: 100px;
+    width: 100px;
+}
+
+/* #email {
+    background-color: #97a1d8;
+} */
+
+/* label color */
+.input-field label {
+    color: #141414;
+    font-weight: 600;
+  }
+  /* label focus color */
+  .input-field input[type=text]:focus + label {
+    color: #000;
+  }
+  /* label underline focus color */
+  .input-field input[type=text]:focus {
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 0 0 #000;
+  }
+  /* valid color */
+  .input-field input[type=text].valid {
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 0 0 #000;
+  }
+  /* invalid color */
+  .input-field input[type=text].invalid {
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 0 0 #000;
+  }
+  /* icon prefix focus color */
+  .input-field .prefix.active {
+    color: #000;
+  }
+
+
+
+/*--------------------Footer*/
 footer ul li {
     display: inline;
     padding: 2px;

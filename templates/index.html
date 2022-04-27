@@ -1,20 +1,32 @@
 {% extends "base.html" %}
 {% block content %}
-    <section id="landing">
-        <div class="container">
-            <div class="row">
-                <div class="col s12 brand-logo">
-                    <h1>Katie Sheedy</h1>
-                    <h2>Full Stack Developer</h2>
-                </div>
+    <div class="hero-image">
+        <div class="container">    
+            <div class="hero-text brand-logo">
+                <h1>Katie Sheedy</h1>
+                <h2>Full Stack Developer</h2>
+                <a class="contact-me btn">Contact Me</a>
             </div>
         </div>
-    </section>
+    </div>
     <section id="info">
         <div class="container">
             <div class="row">
                 <div class="col s12">
                     <h1>About Me</h1>
+                    <p> Hello world, my name is Katie. I'm a recently qualified Full 
+                        Stack Software Developer living in Ireland. I'm currently available for work and am also open to moving!
+                        I received my diploma in Full Stack Software
+                        Development with Code Institute, the only university accredited bootcamp in Europe.
+                        I have a complimentary background in hospitality and TEFL
+                        and have always enjoyed working as part of a team.
+                    </p>
+                    <p> Prior to the pandemic, I left my position as a bar and restaurant supervisor and backpacked around eastern Europe. 
+                        I've had a curiosty for technology and the 'behind the scenes' of the internet from a young age, so
+                        when I returned to Ireland, I decided to finally take the plunge and began learning to code. I throughly enjoyed my time 
+                        with Code Institute and have learned so much. 
+                        I am eagerly pursuing a career in software development so please do get in contact!
+                    </p>
                 </div>
             </div>
         </div>
@@ -24,7 +36,7 @@
             <div class="row">
                 <div class="col s12">
                     <h3>Portfolio</h3>
-                    <p>Check out some of my most recent projects, you can find more on my Github.</p>
+                    <p>Check out some of my most recent projects, you can find more on my <a href="https://github.com/KSheeds1">GitHub</a>.</p>
                 </div>
             </div>
             <div class="row">
@@ -83,7 +95,7 @@
             </div>
         </div>
     </section>
-    <section id="email">
+    <div id="email">
         <div class="container">
             <div class="row">
                 <div class="col s12">
@@ -93,13 +105,15 @@
                     <form class="col s12">
                         <div class="row">
                             <div class="input-field col s12">
-                                <textarea id="textarea1" class="materialize-textarea"></textarea>
-                                <label for="textarea1">Gimme a shout!</label>
+                                <i class="fa-solid fa-envelope prefix"></i>
+                                <textarea id="icon_prefix2" class="materialize-textarea black-text"></textarea>
+                                <label for="icon_prefix2">Gimme a shout!</label>
+                                <a class="waves-effect waves-light center-align btn">Send</a>
                             </div>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 {% endblock %}
